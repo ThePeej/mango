@@ -29,7 +29,6 @@ defmodule Mango.MixProject do
   defp elixirc_paths(_), do: ["lib"]
 
   # Specifies your project dependencies.
-  #
   # Type `mix help deps` for examples and options.
   defp deps do
     [
@@ -43,7 +42,8 @@ defmodule Mango.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:hound, "~> 1.0"}
+      {:hound, "~> 1.0"},
+      {:nimble_csv, "~> 0.1.0"}
     ]
   end
 
