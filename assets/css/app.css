@@ -1,3 +1,6 @@
+@import "./phoenix.css";
+@import "./font-awesome.min.css";
+
 .h1, h1 {
   font-size: 28px;
   color: #ec5d57;

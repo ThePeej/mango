@@ -12,10 +12,10 @@ function ajaxHandler(e) {
   });
 }
 
-export default {
-  init: function() {
-    jQuery(function(){
-      $(".cart-form").on('submit', ajaxHandler)
-    })
-  }
+var ajaxCart = function() {
+  $(function(){
+    $(".cart-form").on('submit', ajaxHandler)
+  })
 }
+
+export default ajaxCart;
