@@ -4,7 +4,7 @@ defmodule MangoWeb.LayoutView do
 
   def cart_link_text(conn) do
     raw """
-    <i class="fa fa-shopping-cart"></i> <span class="cart-count">#{cart_count(conn)}</span>
+    <span class="cart-count">Cart: #{cart_count(conn)}</span>
     """
   end
 end
