@@ -17,6 +17,7 @@ defmodule MangoWeb.Router do
     # Add plugs related to frontend
     plug MangoWeb.Plugs.LoadCustomer
     plug MangoWeb.Plugs.FetchCart
+    plug MangoWeb.Plugs.Locale
   end
 
   scope "/", MangoWeb do
