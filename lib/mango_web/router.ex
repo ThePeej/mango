@@ -44,6 +44,12 @@ defmodule MangoWeb.Router do
     resources "/tickets", TicketController
   end
 
+  scope "/admin", MangoWeb.Admin, as: :admin do
+    pipe_through [:browser, :frontend]
+
+    resources "/users", UserController
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", MangoWeb do
   #   pipe_through :api
