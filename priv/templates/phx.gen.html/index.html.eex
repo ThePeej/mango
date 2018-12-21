@@ -1,6 +1,6 @@
 <h2><%= schema.human_plural %></h2>
 <span class="pull-right">
-  <%%= link "Add new", to: <%= schema.route_helper %>_path(@conn, :new), class: "btn btn-primary" %>
+  <%%= link "Add new", to: Routes.<%= schema.route_helper %>_path(@conn, :new), class: "btn btn-primary" %>
 </span>
 
 <table class="table">
