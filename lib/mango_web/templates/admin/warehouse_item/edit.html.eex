@@ -1,0 +1,7 @@
+<h1>Edit Warehouse item</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.admin_warehouse_item_path(@conn, :update, @warehouse_item)) %>
+
+<span class="pull-right">
+  <%= link "Delete", to: Routes.admin_warehouse_item_path(@conn, :delete, @warehouse_item), method: :delete, data: [confirm: "Are you sure?"] %>
+</span>

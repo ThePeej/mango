@@ -1,0 +1,7 @@
+<h1>Edit Supplier</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.admin_supplier_path(@conn, :update, @supplier)) %>
+
+<span class="pull-right">
+  <%= link "Delete", to: Routes.admin_supplier_path(@conn, :delete, @supplier), method: :delete, data: [confirm: "Are you sure?"] %>
+</span>

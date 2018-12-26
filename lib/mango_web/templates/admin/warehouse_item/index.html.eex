@@ -1,0 +1,30 @@
+<h2>Warehouse items</h2>
+<span class="pull-right">
+  <%= link "Add new", to: Routes.admin_warehouse_item_path(@conn, :new), class: "btn btn-primary" %>
+</span>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Sku</th>
+      <th>Price</th>
+      <th>Stick quantity</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for warehouse_item <- @warehouse_items do %>
+    <tr>
+      <td><%= warehouse_item.sku %></td>
+      <td><%= warehouse_item.price %></td>
+      <td><%= warehouse_item.stick_quantity %></td>
+
+      <td>
+        <%= link "Show", to: Routes.admin_warehouse_item_path(@conn, :show, warehouse_item) %>
+        <%= link "Edit", to: Routes.admin_warehouse_item_path(@conn, :edit, warehouse_item) %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
